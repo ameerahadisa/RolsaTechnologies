@@ -1,0 +1,107 @@
+.body{
+    padding-top: 200px !important;
+}
+.home-btn{
+    place-self: left;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+
+.Home-button{
+    box-shadow: 0 2px #000 !important;
+    font-size: 14px !important;
+    width: 100px !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+}
+
+header{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    font-size: 36px !important;
+    font-weight: 600;
+    text-shadow:  0 7px 6px #000;
+    text-align: center;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 16px;
+}
+
+.login-form label{
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+input[type = 'email'], input[type = 'password']{
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: #fdfeff;
+    width: 400px;
+    height: 34px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 13px;
+    box-shadow: 0 2px #000;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn{
+    margin-top: 3%;
+    box-shadow: 0 2px #000 !important;
+    font-size: 18px !important;
+    width: 300px !important;
+    height: 30px !important;
+    border-radius: 10px !important;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 6px;
+}
+
+.info p{
+    cursor: default;
+    font-size: 14px;
+    color: #808080;
+    text-align: center;
+}
+
+.info a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+}
+
+.info a:hover, .reset:hover {
+    color: #108b49;
+}
+
+.info a:focus, .reset:focus{
+    color: #14ae5c;
+}
+
+.reset{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+}

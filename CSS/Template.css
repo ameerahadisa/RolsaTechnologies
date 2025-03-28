@@ -1,0 +1,370 @@
+/* CSS styling for the entire page to make sure that there are no spaces on the edges of the web page  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sets the background color and the font and font properties of the web page */
+body{
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: "Inter", "Times New Roman", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    position: fixed;
+    background-color: #071013;
+    color: #ffffff;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px 6px #000;
+}
+
+nav img{
+    width: 100px;
+    border-radius: 15px;
+    margin-left: 45px;
+}
+
+.Nav-links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    border-bottom: 3px solid #071013;
+    padding-bottom: 2px;
+}
+
+.Nav-links a:hover{
+    border-bottom: 3px solid #ffffff;
+}
+
+.Nav-links a:focus, .Footer-links a:focus{
+    color: #14ae5c;
+    border-bottom: none;
+}
+
+.Nav-links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    margin-right: 45px;
+}
+
+.body{
+    padding-top: 120px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    min-height: 1024px;
+}
+
+button{
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", "Times New Roman", sans-serif;
+    background-color: #14ae5c;
+    box-shadow: 0 2px #f0f0f0;
+}
+
+button:active{
+    background-color: #14ae5c;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+button:hover{
+    background-color: #108b49;
+}
+
+footer{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: #071013;
+    color: #ffffff;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 6px #000;
+}
+
+.footer-elements{
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+footer img{
+    width: 100px;
+    border-radius: 15px;
+    margin-left: 45px;
+
+}
+
+.Footer-links{
+    position: relative;
+    text-align: center;
+}
+
+.Footer-links a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    
+}
+
+.Footer-links a:hover{
+    color: #108b49;
+}
+
+.address, .contact{
+    cursor: default;
+    text-align: center;
+}
+
+.address h2, .contact h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.term-links{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-self: flex-end;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 12px;
+}
+
+.term-links a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #808080;
+    font-size: 12px;
+}
+
+.term-links a:hover{
+    color: #a0a0a0;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    nav img, footer img{
+        width: 60px;
+        border-radius: 8px;
+        margin-left: 30px;
+    }
+
+    .Nav-links a, .contact p, .address p{
+        font-size: 14px;
+    }
+
+    .contact h2, .address h2{
+        font-size: 20px;
+    }
+
+    .contact h3, .address h3{
+        font-size: 15px;
+    }
+
+    
+    .contact h4, .address h4{
+        font-size: 14px;
+    }
+
+    .Footer-links a, .term-links a{
+        font-size: 12px;
+    }
+
+    footer{
+        height: 20vh;
+    }
+
+    .Nav-links a:hover{
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .buttons{
+        gap: 15px;
+        align-items: center;
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+
+    button{
+        width: 50px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .Nav-links a{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    .Nav-links a{
+        font-size: 6px;
+    }
+
+    .Nav-links{
+        width: 55%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .Nav-links a:hover{
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .contact p, .address p{
+        font-size: 8px;
+    }
+    .contact h2, .address h2{
+        font-size: 16px;
+    }
+
+    .contact h3, .address h3{
+        font-size: 10px;
+    }
+
+    
+    .contact h4, .address h4{
+        font-size: 9px;
+    }
+
+    .Footer-links a, .term-links a{
+        font-size: 8px;
+    }
+
+    footer{
+        height: 19vh;
+    }
+
+    .Nav-links a:hover{
+        border-bottom: 2px solid #ffffff;
+    }
+
+}
+
+@media only screen and (max-width: 667px) {
+    .Footer-links a{
+        padding: 1%;
+    }
+
+    .term-links a{
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav img, footer img{
+        width: 30px;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+
+    .Nav-links{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .Nav-links a{
+        font-size: 4px;
+    }
+
+
+    .Nav-links a:hover{
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .buttons{
+        gap: 4px;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    button{
+        width: 30px;
+        height: 10px;
+        border-radius: 5px;
+        font-size: 7px;
+        font-weight: 300;
+    }
+
+    .footer-elements{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    .Footer-links a, .term-links a{
+        font-size: 5px;
+    }
+
+    .Footer-links{
+        width: 100%;
+    }
+
+    footer{
+        height: 17vh;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .contact p, .address p{
+        font-size: 4px;
+    }
+    .contact h2, .address h2{
+        font-size: 10px;
+    }
+
+    .contact h3, .address h3{
+        font-size: 4px;
+    }
+
+    
+    .contact h4, .address h4{
+        font-size: 3px;
+    }
+
+    .Footer-links a, .term-links a{
+        font-size: 4px;
+    }
+
+    footer{
+        height: 16vh;
+    }
+}
