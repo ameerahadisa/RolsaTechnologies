@@ -52,6 +52,10 @@ input[type = 'email'], input[type = 'password']{
     box-shadow: 0 2px #000;
 }
 
+input[type = 'email']:focus , input[type = 'password']:focus{
+    box-shadow: 2px 2px 5px #108b49;
+}
+
 .submit-btn{
     display: flex;
     justify-content: center;
