@@ -368,3 +368,14 @@ footer img{
         height: 16vh;
     }
 }
+
+.error{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f44336;
+}
+
+.errorInput{
+    box-shadow: 2px 5px #f44336;
+}

@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- CSS stylesheets linked to the HTML -->
     <link rel="stylesheet" href="/CSS/Template.css">
-    <link rel="stylesheet" href="/CSS/Footprint-calculator.css">
+    <link rel="stylesheet" href="/CSS/Track-your-energy.css">
 
     <link rel="icon" href="/Images/Logo.png" type="png"> <!-- Adds the png logo as a favicon to the web page -->
-    <title>Rolsa Technologies| Footprint calculator</title> <!-- Title of the web page -->
+    <title>Rolsa Technologies| Track your energy</title> <!-- Title of the web page -->
 </head>
 <body>
     <!-- This is the navigation bar section of the web page -->
@@ -37,38 +37,44 @@
         <div class="home-btn">
             <a href="/HTML/Homepage.html" ><button type="button" class="Home-button">Back to home</button></a>
         </div>
-        <header>Calculate your footprint</header>
-        <div class="footprint-calc">
-            <div class="question">
-                <p>What kind of vehicle do you travel in the most as a driver or passenger? </p>
+        <header>Energy usage tracker</header>
+        <div class="energy-tracking-form">
+            <form action="" class="track">
+                <label for="appliance">Name of appliance?</label><br>
+                <div class="error-msg">
+                    <p class="error"></p>
+                </div>
+                <input type="text" id="appliance" name="Appliance" aria-describedby="Name of the appliance to be tracked"><br>
+                <label for="energyused">Energy used by appliance(in watts per hour)?</label><br>
+                <div class="error-msg">
+                    <p class="error"></p>
+                </div>
+                <input type="text" id="energyused" name="Energyused" aria-describedby="This is the power used by the appliance"><br>
+                <label for="hours">How many hours is it used per day?</label><br>
+                <div class="error-msg">
+                    <p class="error"></p>
+                </div>
+                <input type="text" id="hours" name="Hours" aria-describedby="Number of hours which you use the appliance for per day"><br>
+                <div class="submit-btn">
+                    <button type="submit" class="track-btn">Track your energy</button>
+                </div>
+            </form>
+        </div>
+        <div class="container" >
+            <div class="appliance-tracked">
+                <p class="appliance heading">Appliance</p>
+                <p class="energy heading">Energy used</p>
             </div>
-            <div class="options">
-                <div class="radio first">
-                    <input type="radio" name="option" id="YES" value="Yes"> 
-                    <label for="YES">Yes</label>
-                </div>
-                <div class="radio second">
-                    <input type="radio" name="option" id="NO" value="No">
-                    <label for="NO">No</label>
-                </div>
+            <div class="appliance-tracked">
+                <p class="appliance">Hisense:</p>
+                <p class="energy"><i class="Energycalculated">89</i> Kilowatts per hour</p>
             </div>
-
-            <div class="question">
-                <p>Are you using renewable(green) electricity in your home? </p>
-            </div>
-            <div class="options">
-                <div class="radio first">
-                    <input type="radio" name="option" id="YES" value="Yes"> 
-                    <label for="YES">Yes</label>
-                </div>
-                <div class="radio second">
-                    <input type="radio" name="option" id="NO" value="No">
-                    <label for="NO">No</label>
-                </div>
+            <div class="appliance-tracked last">
+                <p class="appliance">Hisense:</p>
+                <p class="energy"><i class="Energycalculated">89</i> Kilowatts per hour</p>
             </div>
         </div>
     </div>
-    
     <footer>
         
         <div class="footer-elements">
@@ -116,5 +122,6 @@
         </div>
     </footer>
 
+    <script type="module" src="/JavaScript/Track-your-energy.js"></script>
 </body>
 </html>
