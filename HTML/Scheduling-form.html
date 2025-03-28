@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+     <!-- Bootstrap CDN linked to the HTML -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- CSS stylesheets linked to the HTML -->
     <link rel="stylesheet" href="/CSS/Template.css">
     <link rel="stylesheet" href="/CSS/Scheduling-form.css">
@@ -60,15 +63,25 @@
                     <input type="email" id="email-address" name="Email-address" autocomplete="email" aria-describedby="Identifier of an email account"><br>
                     </div>
                 </div>
-                <div class="input-section">
+                <div class="input-section" id="ps-section">
                     <div class="input-field">
                     <label for="phonenumber">Phone number:</label><br>
                     <input type="text" id="phonenumber" name="Phonenumber" autocomplete="tel" aria-describedby="Number assigned to a mobile device"><br>
                     </div>
                     <div class="input-field">
                     <label for="service-type">Service type:</label><br>
-                    <input type="radio" name="service-type" id="Consultation" value="Consultation"> Consultation <br>
-                    <input type="radio" name="service-type" id="Installation" value ="Installation"> Installation <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Servicetype" id="consultation" value="Consultation">
+                        <label class="form-check-label" for="consultation">
+                        Consultation
+                    </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Servicetype" id="installation" value="Installation">
+                        <label class="form-check-label" for="installation">
+                          Installation
+                    </label>
+                    </div>
                     </div>
                 </div>
                 <div class="input-section">
@@ -101,10 +114,14 @@
                     <input type="date" id="date" name="Date" aria-describedby="Date to schedule the appointment"><br>
                     </div>
                 </div>
-                <label for="Info">Additional information(Optional):</label><br>
-                <textarea name="info" id="Info" aria-describedby="Additonal information about the scheduling of your appointments"></textarea>                
-                <div class="reset-btn">
-                    <button type="submit" class="reset-button">Reset</button>
+                <div class="input-section"  id="Add-info">
+                    <div class="input-field">
+                    <label for="Info">Additional information(Optional):</label><br>
+                    <textarea name="info" id="Info" aria-describedby="Additonal information about the scheduling of your appointments"></textarea>                
+                    </div>
+                </div>
+                    <div class="schedule-btn">
+                    <button type="submit" class="schedule-button">Schedule now</button>
                 </div>
             </form>
         </div> 
@@ -156,6 +173,5 @@
         </div>
     </footer>
 
-    <script type="module" src="/JavaScript/FAQs.js"></script>
 </body>
 </html>
