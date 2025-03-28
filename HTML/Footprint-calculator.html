@@ -7,11 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-     <!-- Bootstrap CDN linked to the HTML -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- CSS stylesheets linked to the HTML -->
-     <link rel="stylesheet" href="/CSS/Template.css">
+    <link rel="stylesheet" href="/CSS/Template.css">
     <link rel="stylesheet" href="/CSS/Footprint-calculator.css">
 
     <link rel="icon" href="/Images/Logo.png" type="png"> <!-- Adds the png logo as a favicon to the web page -->
@@ -42,13 +39,38 @@
         </div>
         <header>Calculate your footprint</header>
         <div class="footprint-calc">
-            <form action="" class="footprint">
-                
-            </form>
-        </div> 
+            <div class="question">
+                <p>What kind of vehicle do you travel in the most as a driver or passenger? </p>
+            </div>
+            <div class="options">
+                <div class="radio first">
+                    <input type="radio" name="option" id="YES" value="Yes"> 
+                    <label for="YES">Yes</label>
+                </div>
+                <div class="radio second">
+                    <input type="radio" name="option" id="NO" value="No">
+                    <label for="NO">No</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>Are you using renewable(green) electricity in your home? </p>
+            </div>
+            <div class="options">
+                <div class="radio first">
+                    <input type="radio" name="option" id="YES" value="Yes"> 
+                    <label for="YES">Yes</label>
+                </div>
+                <div class="radio second">
+                    <input type="radio" name="option" id="NO" value="No">
+                    <label for="NO">No</label>
+                </div>
+            </div>
+        </div>
     </div>
     
     <footer>
+        
         <div class="footer-elements">
         <a href="/HTML/Homepage.html"><img src="/Images/Logo.png" alt="Logo for Rolsa technologies" class="logo"></a> <!-- Png image logo for rolsa technologies -->
 

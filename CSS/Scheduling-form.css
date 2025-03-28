@@ -76,6 +76,46 @@ input[type = 'text']:focus , input[type = 'email']:focus, input[type = 'password
     box-shadow: 2px 2px 5px #108b49;
 }
 
+input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    outline: none;
+    background-color: #fdfeff;
+    box-shadow: 0 0 5px #999;
+    transition: box-shadow 0.3s ease;
+}
+
+  
+ input[type='radio']:before {
+    content: '';
+    display: block;
+    margin: 3.1px auto;
+    width: 60%;
+    height: 60%;
+    border-radius: 55%;
+}
+  
+input[type='radio']:checked:before {
+    background: #108b49;
+}
+
+
+.radio{
+    display: flex;
+    flex-direction: row;
+}
+
+.first{
+    padding-top: 6px;
+}
+
+.second{
+    padding-bottom: 10px;
+}
+
 .input-section{
     display: flex;
     flex-direction: row;
@@ -92,6 +132,8 @@ input[type = 'text']:focus , input[type = 'email']:focus, input[type = 'password
     padding-top: 10px;
     justify-content: left;
 }
+
+
 
 .schedule-btn{
     display: flex;
