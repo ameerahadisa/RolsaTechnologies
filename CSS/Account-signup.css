@@ -1,7 +1,12 @@
+.body{
+    padding-top: 30px;
+    min-height: 900px;
+}
+
 .home-btn{
     place-self: left;
     margin-left: 5%;
-    margin-top: 1.5%;
+    padding-top: 2%;
     margin-bottom: 1%;
 }
 
