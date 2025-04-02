@@ -1,5 +1,5 @@
 
-
+const energyUsed = document.getElementById('energyused');
 
 const hours = document.getElementById('hours')
 
@@ -53,10 +53,15 @@ function validateEnergyUsed(event){
             energyUsed.style.boxShadow = '0 2px #000'
         }
 }
-
-
 }
-const form = document.getElementsByClassName('track')[0]
 
-form.addEventListener('submit', validateApplianceName);
-form.addEventListener('submit', validateEnergyUsed);
+const form = document.querySelector(".track")
+
+form.addEventListener('submit', (e) => {
+    validateApplianceName(e);
+    // validateEnergyUsed(e)
+    // validateApplianceName(e)
+});
+// form.addEventListener('submit', validateEnergyUsed);
+
+energyUsed.addEventListener('change', validateEnergyUsed)
