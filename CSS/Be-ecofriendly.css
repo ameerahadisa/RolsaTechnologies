@@ -132,31 +132,3 @@
     text-align: right;
 }
 
-
-
-input[type = 'email']{
-    appearance: none;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    background-color: #fdfeff;
-    width: 400px;
-    height: 34px;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    padding: 10px;
-    border-radius: 13px;
-    box-shadow: 0 2px #000;
-}
-
-input[type = 'email']:focus{
-    box-shadow: 2px 2px 5px #108b49;
-}
-
-.newsletter{
-    width: 70%;
-    justify-content: space-around !important;
-    gap: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
