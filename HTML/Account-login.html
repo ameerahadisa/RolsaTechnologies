@@ -37,16 +37,28 @@
         <a href="/HTML/Homepage.html" ><button type="button" class="Home-button">Back to home</button></a>
     </div>
     <div class="body">
+        <div class="alert" id="pop-up">
+            <p id = "text"></p><span id="remove">&#10539;</span>
+        </div>
+
         <header>Welcome back!</header>
         <div class="login-form">
             <form action="" class="login">
+
                 <label for="email-address">Email Address:</label><br>
+                <div class="error-msg">
+                    <p class="error" id="emailerror"></p>
+                </div>
                 <input type="email" id="email-address" name="Email-address" autocomplete="email" aria-describedby="Identifier of an email account"><br>
+
                 <label for="password">Password:</label><br>
+                <div class="error-msg">
+                    <p class="error" id="pwderror"></p>
+                </div>
                 <input type="password" id="password" name="Password" autocomplete="new-password" aria-describedby="Secret combination of characters"><br>
                 <a href="/HTML/Password-reset.html" class="reset">Forgot password?</a>
                 <div class="submit-btn">
-                    <button type="submit" class="login-btn">Log in</button>
+                    <button type="submit" class="login-btn" id="login">Log in</button>
                 </div>
                 
             </form>
@@ -106,6 +118,8 @@
             <a href="/HTML/Page-not-available.html">Terms and conditions</a>
         </div>
     </footer>
-
+    <script type="module" src="/JavaScript/Validate-login.js" defer></script>
+    <script type="module" src="/JavaScript/login.js" defer></script>
+    <script type="module" src="/JavaScript/pop-up.js"></script>
 </body>
 </html>

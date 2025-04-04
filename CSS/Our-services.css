@@ -15,15 +15,14 @@
 .imgtext{
     height: 10px;
     position: relative;
-    top: -200px;
-    font-size: 24px;
+    top: -110px;
+    font-size: 28px;
     font-weight: 600;
     color: #ffffff;
-    text-shadow:  0 7px 6px #000;
+    text-shadow:  0 8px 3px #000;
     width: 50%;
     margin-left: 4%;
-    cursor: default;
-    
+    cursor: default; 
 }
 
 

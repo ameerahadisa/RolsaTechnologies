@@ -39,35 +39,188 @@
         </div>
         <header>Calculate your footprint</header>
         <div class="footprint-calc">
+        <form action="">
+            <div class="section">
             <div class="question">
-                <p>What kind of vehicle do you travel in the most as a driver or passenger? </p>
+                <p>How do you heat your home(gas, electric etc)? </p>
             </div>
             <div class="options">
-                <div class="radio first">
-                    <input type="radio" name="option" id="YES" value="Yes"> 
-                    <label for="YES">Yes</label>
-                </div>
-                <div class="radio second">
-                    <input type="radio" name="option" id="NO" value="No">
-                    <label for="NO">No</label>
-                </div>
+                    <input type="radio" name="option1" id="electric" value="Electric"> Electric <br>
+                    <input type="radio" name="option1" id="gas" value="Gas"> Gas <br>
+                    <input type="radio" name="option1" id="solarthermals" value="Solar thermals"> Solar thermal <br>
+                    <input type="radio" name="option1" id="heatpumps" value="Heat pumps"> Heat pumps<br>
+            </div>
             </div>
 
+            <div class="section">
+            <div class="question">
+                <p>How often do you use heating or air conditioning? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option2" id="rarely" value="Rarely"> Rarely <br>
+                    <input type="radio" name="option2" id="sometimes" value="Sometimes"> Sometimes <br>
+                    <input type="radio" name="option2" id="often" value="Often"> Often <br>
+                    <input type="radio" name="option2" id="always" value="always"> Always<br>
+            </div> 
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>Do you use energy-efficient appliances or lighting(like LEDs)?</p>
+            </div>
+            <div class="options">
+                <input type="radio" name="option3" id="YES" value="Yes"> Yes <br>
+                <input type="radio" name="option3" id="NO" value="No"> No <br>
+            </div>
+            </div>
+
+            <div class="section">
             <div class="question">
                 <p>Are you using renewable(green) electricity in your home? </p>
             </div>
             <div class="options">
-                <div class="radio first">
-                    <input type="radio" name="option" id="YES" value="Yes"> 
-                    <label for="YES">Yes</label>
-                </div>
-                <div class="radio second">
-                    <input type="radio" name="option" id="NO" value="No">
-                    <label for="NO">No</label>
-                </div>
+                    <input type="radio" name="option4" id="YES" value="Yes"> Yes <br>
+                    <input type="radio" name="option4" id="NO" value="No"> No <br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>What is your prefered means of transportation? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option5" id="walking" value="Walking"> Walking <br>
+                    <input type="radio" name="option5" id="publictransport" value="Public transport"> Public transport <br>
+                    <input type="radio" name="option5" id="electricvehicle" value="Electric Vehicle"> Electric vehicle such as electric car, bikes or scooters <br>
+                    <input type="radio" name="option5" id="traditionalvehicles" value="Traditional vehicle"> Traditional vehicles<br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>How many miles do you travel in a week or month? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option6" id="0-5" value="0 to 5"> 0 to 5 miles <br>
+                    <input type="radio" name="option6" id="5-10" value="5 to 10"> 5 to 10 miles <br>
+                    <input type="radio" name="option6" id="10-15" value="10 to 15"> 10 to 15 miles <br>
+                    <input type="radio" name="option6" id="15-20" value="15 to 20"> 15 to 20 miles <br>
+                    <input type="radio" name="option6" id=">20" value="More than 20"> More than 20 miles <br>  
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>How many flights have you taken in the past year? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option7" id="0" value="0"> None <br>
+                    <input type="radio" name="option7" id="0-2" value="0 to 2"> 1 to 2 flights <br>
+                    <input type="radio" name="option7" id="3-5" value="3 to 5"> 3 to 5 flights <br>
+                    <input type="radio" name="option7" id="5-10" value="5 to 10"> 5 to 10 flights <br>
+                    <input type="radio" name="option7" id=">10" value="More than 10"> More than 10 flights <br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>How often do you eat meat or dairy products? </p>
+            </div>
+            <div class="options">
+                <input type="radio" name="option" id="rarely" value="Rarely"> Rarely <br>
+                    <input type="radio" name="option8" id="sometimes" value="Sometimes"> Sometimes <br>
+                    <input type="radio" name="option8" id="often" value="Often"> Often <br>
+                    <input type="radio" name="option8" id="always" value="always"> Always<br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>Do you buy locally sourced or organic food?</p>
+            </div>
+            <div class="options">
+                <input type="radio" name="option9" id="YES" value="Yes"> Yes <br>
+                <input type="radio" name="option9" id="NO" value="No"> No <br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>How often do you go shopping for new clothes or electronics? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option10" id="rarely" value="Rarely"> Rarely <br>
+                    <input type="radio" name="option10" id="sometimes" value="Sometimes"> Sometimes <br>
+                    <input type="radio" name="option10" id="often" value="Often"> Often <br>
+                    <input type="radio" name="option10" id="always" value="always"> Always<br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>Do you buy second hand or sustainably made products?</p>
+            </div>
+            <div class="options">
+                <input type="radio" name="option11" id="YES" value="Yes"> Yes <br>
+                <input type="radio" name="option11" id="NO" value="No"> No <br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>Do you recycle regularly?</p>
+            </div>
+            <div class="options">
+                <input type="radio" name="option12" id="YES" value="Yes"> Yes <br>
+                <input type="radio" name="option12" id="NO" value="No"> No <br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>How many people live in your home? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option13" id="0-2" value="0 to 2"> 1 to 2 people <br>
+                    <input type="radio" name="option13" id="3-5" value="3 to 5"> 3 to 5 people <br>
+                    <input type="radio" name="option13" id="5-10" value="5 to 10"> 5 to 10 people <br>
+                    <input type="radio" name="option13" id=">10" value="More than 10"> More than 10 people <br>
+            </div>
+            </div>
+
+           <div class="section">
+            <div class="question">
+                <p>What size is your home(flat, terraced house etc)? </p>
+            </div>
+            <div class="options">
+                    <input type="radio" name="option14" id="smallflat" value="Flat(Small)"> Flat(Small)<br>
+                    <input type="radio" name="option14" id="largeflat" value="Flat(Large)"> Flat(Large)<br>
+                    <input type="radio" name="option14" id="Terraced House" value="Terraced House">Terraced house<br>
+                    <input type="radio" name="option14" id="semidetachedhouse" value="Semi-detached house"> Semi-detached house<br>
+                    <input type="radio" name="option14" id="detachedhouse" value="detached house"> Detached house<br>
+                    <input type="radio" name="option14" id="largehome" value="Large home"> Large home/ Villa<br>
+            </div>
+            </div>
+
+            <div class="section">
+            <div class="question">
+                <p>Do you use smart home technology to manage energy?</p>
+            </div>
+            <div class="options">
+                <input type="radio" name="option15" id="YES" value="Yes"> Yes <br>
+                <input type="radio" name="option15" id="NO" value="No"> No <br>
+            </div>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" class="calculate-btn">Calculate your footprint</button>
+            </div>
+
+            <div class="result">
+
             </div>
         </div>
-    </div>
+        </div>
+    </form>
     
     <footer>
         

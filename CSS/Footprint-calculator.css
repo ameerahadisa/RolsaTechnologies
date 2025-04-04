@@ -21,3 +21,73 @@ header{
     text-align: center;
 }
 
+.footprint-calc{
+    margin-bottom: 5%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    width: 60%;
+}
+
+.question{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.options{
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.calculate-btn{
+    margin-top: 3%;
+    box-shadow: 0 2px #000 !important;
+    font-size: 18px !important;
+    width: 300px !important;
+    height: 30px !important;
+    border-radius: 10px !important;
+}
+
+input[type='radio'] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    outline: none;
+    background-color: #fdfeff;
+    box-shadow: 0 0 5px #999;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type='radio']:before {
+    content: '';
+    display: block;
+    margin: 3.1px auto;
+    width: 60%;
+    height: 60%;
+    border-radius: 55%;
+}
+  
+input[type='radio']:checked:before {
+    background: #108b49;
+}
