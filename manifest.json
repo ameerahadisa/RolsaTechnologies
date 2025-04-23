@@ -5,43 +5,43 @@
     "start_url": "/HTML/Homepage.html",
     "display": "standalone",
     "background_color": "#f0f0f0",
-    "theme_color":"##f0f0f0",
+    "theme_color":"#f0f0f0",
     "orientation": "portrait-primary",
     "scope": "/",
 
     "icons": [
         {
-            "src": "/Icons/Icon50by50.png",
+            "src": "/icons/Icon50by50.png",
             "type": "image/png",
             "sizes": "50x50"
         },
         {
-            "src": "/Icons/Icon64by64.png",
+            "src": "/icons/Icon64by64.png",
             "type": "image/png",
             "sizes": "64x64"
         },
         {
-            "src": "/Icons/Icon128by128.png",
+            "src": "/icons/Icon128by128.png",
             "type": "image/png",
             "sizes": "128x128"
         },
         {
-            "src": "/Icons/Icon144by144.png",
+            "src": "/icons/Icon144by144.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "/Icons/Icon192by192.png",
+            "src": "/icons/Icon192by192.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "193x193"
         },
         {
-            "src": "/Icons/Icon256by256.png",
+            "src": "/icons/Icon256by256.png",
             "type": "image/png",
             "sizes": "256x256"
         },
         {
-            "src": "/Icons/Icon512by512.png",
+            "src": "/icons/Icon512by512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
@@ -49,16 +49,14 @@
     
     "Screenshots": [
         {
-            "src":"/Screenshots/Screenshot 2025-04-23 141153.png",
+            "src":"/Screenshots/Screenshotwide.png",
             "sizes": "1920x1080",
-            "type": "image/png",
-            "form_factor": "wide"
+            "type": "image/png"
         },
         {
-            "src":"/Screenshots/Screenshot 2025-04-23 141251.png",
+            "src":"/Screenshots/screenshotnarrow.png",
             "sizes": "1080x1920",
-            "type": "image/png",
-            "form_factor": "narrow"
+            "type": "image/png"
         }
     ]
 }
