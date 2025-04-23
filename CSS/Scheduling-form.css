@@ -38,6 +38,7 @@ header{
 }
 
 
+
 input[type = 'text'], input[type = 'email'], input[type = 'password'], input[type = 'time'], input[type = 'date']{
     appearance: none;
     outline: none;
@@ -124,9 +125,14 @@ input[type='radio']:checked:before {
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
+    width: 900px;
 }
 
-#ps-section{
+.input-field{
+    width: 450px;
+}
+
+.section{
     width: 565px;
     display: flex;
 }

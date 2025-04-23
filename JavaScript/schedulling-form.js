@@ -337,11 +337,11 @@ function validateCityorTown() {
 
     let isValid = true 
   
-    //Email error message
+    //City or town error id
     const cityortownError = document.getElementById('cityortownerrormsg')
-    //Email Input field
+    //City or town Input field
     const cityortownInput = document.getElementById("cityortown")
-    //Email Input value
+    //City or town Input value
     const cityortown = cityortownInput.value
   
     //Pattern for validating city or town
@@ -350,7 +350,7 @@ function validateCityorTown() {
     let test = regex.test(cityortown);
   
     if (cityortown.length === 0) {
-        //Email error message
+        //City or town error message
         cityortownError.innerText = 'The city or town field cannot be empty, please enter your city or town'
         cityortownInput.style.boxShadow = '2px 5px #f44336'
         isValid = false;

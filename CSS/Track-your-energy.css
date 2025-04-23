@@ -35,6 +35,10 @@ header{
     padding-bottom: 25px;
 }
 
+.track{
+    width: 400px;
+}
+
 input[type = 'text']{
     appearance: none;
     outline: none;
@@ -97,9 +101,7 @@ input[type = 'text']:focus{
     text-align: center;
 }
 
-.last{
-    border-bottom: none;
-}
+
 
 .heading{
     font-weight: 700;
@@ -108,4 +110,6 @@ input[type = 'text']:focus{
     text-shadow: 2px 0 3px #108b49;
     font-size: 22px;
 }
+
+
 

@@ -45,37 +45,39 @@
             <form action="" class="track">
                 <label for="appliance">Name of appliance?</label><br>
                 <div class="error-msg">
-                    <p class="error"></p>
+                    <p class="error" id="nameerrormsg"></p>
                 </div>
                 <input type="text" id="appliance" name="Appliance" aria-describedby="Name of the appliance to be tracked"><br>
                 <label for="energyused">Energy used by appliance(in watts per hour)?</label><br>
                 <div class="error-msg">
-                    <p class="error"></p>
+                    <p class="error" id="energyusederrormsg"></p>
                 </div>
                 <input type="text" id="energyused" name="Energyused" aria-describedby="This is the power used by the appliance"><br>
                 <label for="hours">How many hours is it used per day?</label><br>
                 <div class="error-msg">
-                    <p class="error"></p>
+                    <p class="error" id="hourserrormsg"></p>
                 </div>
                 <input type="text" id="hours" name="Hours" aria-describedby="Number of hours which you use the appliance for per day"><br>
                 <div class="submit-btn">
-                    <button type="submit" class="track-btn">Track your energy</button>
+                    <button type="submit" class="track-btn" id="track-Btn">Track your energy</button>
                 </div>
             </form>
         </div>
-        <div class="container" >
+        <div class="container" id="containerr">
             <div class="appliance-tracked">
                 <p class="appliance heading">Appliance</p>
                 <p class="energy heading">Energy used</p>
             </div>
-            <div class="appliance-tracked">
-                <p class="appliance">Hisense:</p>
-                <p class="energy"><i class="Energycalculated">89</i> Kilowatts per hour</p>
+            <div id="energytracked">
+            <!-- <div class="appliance-tracked" >
+                <p class="appliance" id="Appliance"></p>
+                <p class="energy"><i id="Energycalculated"></i> Kilowatts per hour</p> -->
             </div>
-            <div class="appliance-tracked last">
-                <p class="appliance">Hisense:</p>
-                <p class="energy"><i class="Energycalculated">89</i> Kilowatts per hour</p>
+            <div class="appliance-tracked" id = "energytracker" >
+                <p class="appliance" id="Appliance"></p>
+                <p class="energy"><i id="Energycalculated"></i> Kilowatts per hour</p>
             </div>
+        </div>
         </div>
     </div>
     <footer>
