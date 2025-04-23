@@ -1,0 +1,64 @@
+{
+    "name": "Rolsa Technologies Web application",
+    "short_name": "Rolsa Technologies",
+    "description": "This is a web application for the green technology company, Rolsa Technology",
+    "start_url": "/HTML/Homepage.html",
+    "display": "standalone",
+    "background_color": "#f0f0f0",
+    "theme_color":"##f0f0f0",
+    "orientation": "portrait-primary",
+    "scope": "/",
+
+    "icons": [
+        {
+            "src": "/Icons/Icon50by50.png",
+            "type": "image/png",
+            "sizes": "50x50"
+        },
+        {
+            "src": "/Icons/Icon64by64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/Icons/Icon128by128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/Icons/Icon144by144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/Icons/Icon192by192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/Icons/Icon256by256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/Icons/Icon512by512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    
+    "Screenshots": [
+        {
+            "src":"/Screenshots/Screenshot 2025-04-23 141153.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src":"/Screenshots/Screenshot 2025-04-23 141251.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ]
+}
