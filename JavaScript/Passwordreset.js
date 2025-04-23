@@ -23,36 +23,72 @@ const auth = getAuth();
 //Getting the elements we need button 
 const submitBtn = document.getElementById("reset")
 
+//This function validates the email address
+function validateEmailInput() {
 
-submitBtn.addEventListener('click', (event) =>{
-  //Stops the form from submitting
-  event.preventDefault()
+  let isValid = true 
 
-  //Getting the email and password values
+  //Email error message
+  const emailError = document.getElementById('emailerrormsg')
+  //Email Input field
   const emailInput = document.getElementById("email-address")
+  //Email Input value
   const email = emailInput.value
 
-  sendPasswordResetEmail(auth, email)
-  .then(() => {
-     //get the pop up message element we need and the x sybmol
-     let popUp = document.getElementById("pop-up")
-     let remove = document.getElementById("remove")
-     let text = document.getElementById("text")
+  //Pattern for validating email address
+  let regex = /^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/
 
-     text.innerText = "Password email reset will be sent if account with email address exists"
-     popUp.style.marginLeft = '630px'
-     popUp.classList.add("show")
-     remove.classList.add("show")
+  let test = regex.test(email);
 
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    console.log(errorCode, errorMessage)
-  });
+  if (email.length === 0) {
+      //Email error message
+      emailError.innerText = 'The email field cannot be empty, please enter a valid email address'
+      emailInput.style.boxShadow = '2px 5px #f44336'
+      isValid = false;
+  }
+  else if (!test) {
+      emailError.innerText = 'The email address you entered is invalid, Please enter a valid email address'
+      emailInput.style.boxShadow = '2px 5px #f44336'
+      isValid = false;
+  }
+  else {
+      emailError.innerText = ''
+      emailInput.style.boxShadow = '0 2px #000'
+      isValid = true;
+  }
 
+  return isValid
 }
-);
 
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault()
 
+  const isEmailValid = validateEmailInput()
+
+  if (isEmailValid) {
+          
+      //input fields
+      const email = document.getElementById("email-address").value
+
+      sendPasswordResetEmail(auth, email)
+      .then(() => {
+        //get the pop up message element we need and the x sybmol
+        let popUp = document.getElementById("pop-up")
+        let remove = document.getElementById("remove")
+        let text = document.getElementById("text")
+
+        text.innerText = "Password email reset will be sent if account with email address exists"
+        popUp.style.marginLeft = '630px'
+        popUp.classList.add("show")
+        remove.classList.add("show")
+
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage)
+      });
+
+  }
+})
 

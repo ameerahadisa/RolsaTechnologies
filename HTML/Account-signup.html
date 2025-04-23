@@ -48,16 +48,34 @@
         <div class="Sign-up-form">
             <form action="" class="sign-up">
                 <label for="firstname">First name:</label><br>
+                <div class="error-msg">
+                    <p class="error" id="fnerrormsg"></p>
+                </div>
                 <input type="text" id="firstname" name="Firstname" autocomplete="given-name" aria-describedby="Personal name that comes before family name"><br>
                 <label for="lastname">Last name:</label><br>
+                <div class="error-msg">
+                    <p class="error" id="lnerrormsg"></p>
+                </div>
                 <input type="text" id="lastname" name="Lastname" autocomplete="family-name" aria-describedby="Family name"><br>
                 <label for="middlename">Middle name(optional):</label><br>
+                <div class="error-msg">
+                    <p class="error" id="mnerrormsg"></p>
+                </div>
                 <input type="text" id="middlename" name="Middlename" autocomplete="additional-name" aria-describedby="Name placed after first name and last name"><br>
                 <label for="email-address">Email Address:</label><br>
+                <div class="error-msg">
+                    <p class="error" id="emailerrormsg"></p>
+                </div>
                 <input type="email" id="email-address" name="Email-address" autocomplete="email" aria-describedby="Identifier of an email account"><br>
                 <label for="password">Password:</label><br>
+                <div class="error-msg">
+                    <p class="error" id="pwderrormsg"></p>
+                </div>
                 <input type="password" id="password" name="Password" autocomplete="new-password" aria-describedby="Secret combination of characters"><br>
                 <label for="phonenumber">Phone number(Optional):</label><br>
+                <div class="error-msg">
+                    <p class="error" id="phnoerrormsg"/p>
+                </div>
                 <input type="text" id="phonenumber" name="Phonenumber" autocomplete="tel" aria-describedby="Number assigned to a mobile device"><br>
                 <div class="submit-btn">
                     <button type="submit" class="sign-in-btn" id="sign-in">Sign up</button>
@@ -121,8 +139,7 @@
         </div>
     </footer>
     <!-- <script type="module" src="validateuserinfo.js" defer></script> -->
-     <script type="module" src="/JavaScript/pop-up.js"></script>
-     <script type="script" src="/JavaScript/config.js" defer></script>
+    <script type="module" src="/JavaScript/pop-up.js" defer></script>
     <script type="module" src="/JavaScript/Sign-up.js" defer></script>
     <!-- <script type="module" src="/JavaScript/Storeinfo.js" defer></script> -->
 </body>

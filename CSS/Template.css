@@ -369,9 +369,13 @@ footer img{
     }
 }
 
+.error-msg{
+    width: 100%;
+}
+
 .error{
-    padding-left: 10px;
-    font-size: 16px;
+    padding-left: 5px;
+    font-size: 12px;
     font-weight: 600;
     color: #f44336;
 }

@@ -1,6 +1,6 @@
 .body{
-    padding-top: 30px;
-    min-height: 900px;
+    padding-top: 20px;
+    min-height: 1000px;
 }
 
 .home-btn{
@@ -30,6 +30,7 @@ header{
 .Sign-up-form{
     display: flex;
     justify-content: center;
+    position: relative;
     text-align: left;
     font-size: 18px;
 }
@@ -37,6 +38,10 @@ header{
 .Sign-up-form label{
     padding-left: 10px;
     padding-bottom: 15px;
+}
+
+.sign-up{
+    width: 400px;
 }
 
 input[type = 'text'], input[type = 'email'], input[type = 'password']{

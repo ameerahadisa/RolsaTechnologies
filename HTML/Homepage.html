@@ -35,7 +35,7 @@
     <div class="body">
         <div class="header">
             <img src="/Images/windmill-1340072.jpg" alt="Image of a windmill and greenery">
-            <p class="imgtext">WELCOME</p><br>
+            <p class="imgtext">WELCOME <span id="username"></span></p><br>
             <p class="imgtext">DISCOVER THE SERVICES OFFERED BY ROLSA TECHNOLOGIES - THE NUMBER ONE LEADING GREEN TECH COMPANY</p>
         </div>
         <div class="divider">
@@ -114,9 +114,12 @@
                         <h1 class="sectionheading">Subscribe to our newsletter</h1>
                         <p class="sectiontext">Simply enter your email below</p>
                         <div class="sectiontext">
+                        <div class="error-msg">
+                            <p class="error" id="emailerrormsg"></p>
+                        </div>
                         <input type="email" id="email-address" name="Email-address" autocomplete="email" aria-describedby="Identifier of an email account"><br>            
                         <div class="Subscribe-btn">
-                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                            <button type="submit" class="subscribe-btn" id="sub-btn">Subscribe</button>
                         </div>
                         </div>
                         </div>
@@ -174,5 +177,7 @@
         </div>
     </footer>
 
+    <script type="module" src="/JavaScript/pop-up.js" defer></script>
+    <script src="/JavaScript/Homepage.js" type="module" defer></script>
 </body>
 </html>
