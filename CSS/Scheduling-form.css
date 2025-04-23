@@ -1,3 +1,6 @@
+.body{
+    min-height: 1250px;
+}
 .home-btn{
     place-self: left;
     margin-left: 5%;
@@ -147,4 +150,50 @@ input[type='radio']:checked:before {
     width: 300px !important;
     height: 30px !important;
     border-radius: 10px !important;
+}
+
+.alert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 200;
+    position: relative;
+    margin-left: 400px;
+    top: -80px;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 3px #000;
+    place-self: center;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+    transition: top 0.5s ease-in-out, opacity 0.2s ease-in-out;
+
+}
+
+#remove{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#remove:hover{
+    color: #14ae5c;
+}
+
+#remove:focus{
+    color: #108b49;
+}
+
+.show{
+    top: 25px;
+    opacity: 1;
+}
+
+.hide{
+    top: -1000px;
+    opacity: 0;
 }

@@ -273,6 +273,11 @@ submitBtn.addEventListener('click', (event) => {
                   // Signed up 
                   const user = userCredential.user;
                   console.log("signed in")
+
+                //Clears all the input fields 
+                const myForm = document.getElementById('form')
+                myForm.reset()
+                
                   //get the pop up message element we need and the x sybmol
                   let popUp = document.getElementById("pop-up")
                   let remove = document.getElementById("remove")

@@ -72,6 +72,11 @@ submitBtn.addEventListener('click', (event) => {
 
       sendPasswordResetEmail(auth, email)
       .then(() => {
+
+        //Clears all the input fields 
+        let emailInput = document.getElementById('email-address')
+        emailInput.value = '';
+        
         //get the pop up message element we need and the x sybmol
         let popUp = document.getElementById("pop-up")
         let remove = document.getElementById("remove")
@@ -81,6 +86,7 @@ submitBtn.addEventListener('click', (event) => {
         popUp.style.marginLeft = '630px'
         popUp.classList.add("show")
         remove.classList.add("show")
+
 
       })
       .catch((error) => {

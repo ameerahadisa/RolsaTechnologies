@@ -34,39 +34,62 @@
         </div>
     </nav>
     <div class="body">
+
+        <div class="alert" id="pop-up">
+            <p id = "text"></p><span id="remove">&#10539;</span>
+        </div>
+
         <div class="home-btn">
             <a href="/HTML/Our-services.html" ><button type="button" class="Home-button">Back to services</button></a>
         </div>
         <header>Schedule your appointment</header>
-        <div class="schedule-form">
-            <form action="" class="schedule">
+        <div class="schedule-form" >
+            <form action="" class="schedule" id="form">
                 <div class="input-section">
                     <div class="input-field">
                     <label for="firstname">First name:</label><br>
+                    <div class="error-msg">
+                        <p class="error" id="fnerrormsg"></p>
+                    </div>
                     <input type="text" id="firstname" name="Firstname" autocomplete="given-name" aria-describedby="Personal name that comes before family name"><br>
                     </div>
                     <div class="input-field">
                     <label for="lastname">Last name:</label><br>
+                    <div class="error-msg">
+                        <p class="error" id="lnerrormsg"></p>
+                    </div>
                     <input type="text" id="lastname" name="Lastname" autocomplete="family-name" aria-describedby="Family name"><br>
                     </div>
                 </div>
                 <div class="input-section">
                     <div class="input-field">
                     <label for="middlename">Middle name(optional):</label><br>
+                    <div class="error-msg">
+                        <p class="error" id="mnerrormsg"></p>
+                    </div>
                     <input type="text" id="middlename" name="Middlename" autocomplete="additional-name" aria-describedby="Name placed after first name and last name"><br>
                     </div>
                     <div class="input-field">
                     <label for="email-address">Email Address:</label><br>
+                    <div class="error-msg">
+                        <p class="error" id="emailerrormsg"></p>
+                    </div>
                     <input type="email" id="email-address" name="Email-address" autocomplete="email" aria-describedby="Identifier of an email account"><br>
                     </div>
                 </div>
                 <div class="input-section" id="ps-section">
                     <div class="input-field">
                     <label for="phonenumber">Phone number:</label><br>
+                    <div class="error-msg">
+                        <p class="error" id="phnoerrormsg"/p>
+                    </div>
                     <input type="text" id="phonenumber" name="Phonenumber" autocomplete="tel" aria-describedby="Number assigned to a mobile device"><br>
                     </div>
                     <div class="input-field">
                     <label for="service-type">Service type:</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="sterrormsg"></p>
+                    </div>
                     <div class="radio first">
                     <input type="radio" name="servicetype" id="consultation" value="Consultation"> 
                     <label for="consultation">Consultation</label>
@@ -80,41 +103,62 @@
                 <div class="input-section">
                     <div class="input-field">
                     <label for="add1">Address line 1:</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="add1errormsg"></p>
+                    </div>
                     <input type="text" id="add1" name="Address1" autocomplete="address-line1" aria-describedby="Main part of an address"><br>
                     </div>
                     <div class="input-field">
-                    <label for="middlename">Address line 2:</label><br>
+                    <label for="add2">Address line 2(Optional):</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="add2errormsg"></p>
+                    </div>
                     <input type="text" id="add2" name="Address2" autocomplete="address-line2" aria-describedby="Additional information that does not fit in address line 1"><br>
                     </div>
                 </div>
                 <div class="input-section">
                     <div class="input-field">
                     <label for="postcode">Postcode:</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="postcodeerrormsg"></p>
+                    </div>
                     <input type="text" id="postcode" name="Postcode" autocomplete="postal-code" aria-describedby="Series of letters or digits or both in an address"><br>
                     </div>
                     <div class="input-field">
                     <label for="cityortown">City/Town:</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="cityortownerrormsg"></p>
+                    </div>
                     <input type="text" id="cityortown" name="Cityortown" autocomplete="address-level2" aria-describedby="Name placed after first name and last name"><br>
                     </div>
                 </div>
                 <div class="input-section">
                     <div class="input-field">
                     <label for="Time">Time of appointment:</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="timeerrormsg"></p>
+                    </div>
                     <input type="time" id="time" name="Time"  aria-describedby="Time to schedule the appointment"><br>
                     </div>
                     <div class="input-field">
                     <label for="date">Date of appointment:</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="dateerrormsg"></p>
+                    </div>            
                     <input type="date" id="date" name="Date" aria-describedby="Date to schedule the appointment"><br>
                     </div>
                 </div>
                 <div class="input-section"  id="Add-info">
                     <div class="input-field">
                     <label for="Info">Additional information(Optional):</label><br>
+                    <div class="error">
+                        <p class="errormsg" id="addinfoerrormsg"></p>
+                    </div>
                     <textarea name="info" id="Info" aria-describedby="Additonal information about the scheduling of your appointments"></textarea>                
                     </div>
                 </div>
                     <div class="schedule-btn">
-                    <button type="submit" class="schedule-button">Schedule now</button>
+                    <button type="submit" class="schedule-button" id="schedule-btn">Schedule now</button>
                 </div>
             </form>
         </div> 
@@ -166,5 +210,7 @@
         </div>
     </footer>
 
+    <script src="/JavaScript/pop-up.js" defer></script>
+    <script src="/JavaScript/schedulling-form.js" type="module" defer></script>
 </body>
 </html>

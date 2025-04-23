@@ -44,14 +44,17 @@ function databaseStorage(event){
 
     //Signing in user anonymously to link their data to a unique user id 
     signInAnonymously(auth)
-  .then(() => {
-    const user = auth.currentUser;
-    console.log("Signed in anonymously ");
+    .then(() => {
+      const user = auth.currentUser;
+      console.log("Signed in anonymously ");
       // Using the user id to store the email address
       setDoc(doc(database, 'users', user.uid, 'Info', 'Newsletter'), {
           Email: email,
           Subscribed:true
       });
+      //Clears all the input fields 
+      const myForm = document.getElementById('form')
+      myForm.reset()
       //Success message
       emailError.innerText = 'You have subscribed to our newsletter'
       emailError.style.color = '#108b49'
