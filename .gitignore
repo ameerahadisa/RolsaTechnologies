@@ -1,2 +1,8 @@
-node_modules
+node_modules/
 package-lock.json
+JavaScript/Homepage.js
+JavaScript/login.js
+JavaScript/Sign-up.js
+JavaScript/schedulling-form.js
+JavaScript/Passwordreset.js
+
